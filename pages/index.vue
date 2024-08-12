@@ -3,6 +3,7 @@
   <Profile /> -->
   <div>
     <h1>Hello Nuxt 3</h1>
+    <ContentDoc />
     <IconsBell />
     <img src="/garden.jpg" />
   </div>
