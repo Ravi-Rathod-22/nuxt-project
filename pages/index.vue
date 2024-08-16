@@ -6,6 +6,12 @@
     <ContentDoc />
     <IconsBell />
     <img src="/garden.jpg" />
+    <div>
+      Counter:{{ counter }} <button @click="counter++">+</button
+      ><button @click="counter--">-</button>
+    </div>
+    <Counter />
+    <p>Current color: {{ color }}</p>
   </div>
 </template>
 
@@ -14,4 +20,10 @@ const { sayHello } = useUtils();
 sayHello();
 const { $sayHello } = useNuxtApp();
 $sayHello(`This my first plugin`);
+
+// Create a reactive state and set default value
+const counter = useCounter();
+
+// ---cut-end---
+const color = useColor(); // Same as useState('color')
 </script>
