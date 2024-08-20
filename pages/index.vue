@@ -26,4 +26,7 @@ const counter = useCounter();
 
 // ---cut-end---
 const color = useColor(); // Same as useState('color')
+
+const response = await $fetch("/api/hello");
+console.log("response", response);
 </script>
